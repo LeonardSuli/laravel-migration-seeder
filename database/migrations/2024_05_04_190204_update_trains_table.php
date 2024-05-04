@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::table('trains', function (Blueprint $table) {
             $table->date('departure_date')->after('arrival_station')->nullable();
-            $table->decimal('price_ticket', 3)->unsigned()->after('arrival_time')->nullable();
+            $table->decimal('price_ticket', 5)->unsigned()->after('arrival_time')->nullable();
         });
     }
 
