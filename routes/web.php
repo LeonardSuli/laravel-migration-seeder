@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PageController;
 use Illuminate\Support\Facades\Route;
 use App\Models\Train;
 
@@ -14,9 +15,5 @@ use App\Models\Train;
 |
 */
 
-Route::get('/', function () {
 
-    $trains = Train::all();
-
-    return view('welcome', compact('trains'));
-})->name('home');
+Route::get('/', [PageController::class, 'index'])->name('home');

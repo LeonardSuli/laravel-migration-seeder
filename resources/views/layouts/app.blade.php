@@ -20,7 +20,7 @@
 
         <header>
             <nav
-                class="navbar navbar-expand-sm navbar-light bg-light"
+                class="navbar navbar-expand-sm navbar-light bg-primary-subtle"
             >
                 <div class="container">
                     <a class="navbar-brand" href="{{route('home')}}">TRAINS</a>
@@ -62,7 +62,7 @@
             @yield('content')
         </main>
 
-        <footer class="bg-light p-5">
+        <footer class="bg-primary-subtle p-5">
 
             <div class="container">
 
